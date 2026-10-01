@@ -1,0 +1,13 @@
+<%-- TEMPLATE ONLY: your real connect.jsp was not in the documentation.
+     Copy this to connect.jsp, fill in your values, and keep connect.jsp out of Git (see .gitignore). --%>
+<%@ page import="java.sql.*" %>
+<%
+Connection connection = null;
+try {
+    Class.forName("com.mysql.jdbc.Driver");
+    connection = DriverManager.getConnection(
+        "jdbc:mysql://localhost:3306/YOUR_DB_NAME", "YOUR_DB_USER", "YOUR_DB_PASSWORD");
+} catch (Exception e) {
+    out.println(e.getMessage());
+}
+%>

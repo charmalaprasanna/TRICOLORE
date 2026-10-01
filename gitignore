@@ -1,0 +1,8 @@
+connect.jsp
+*.class
+.classpath
+.project
+.settings/
+build/
+target/
+.DS_Store
